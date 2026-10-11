@@ -41,7 +41,7 @@ if not os.path.exists(root + "/apps.yaml"):
                 break
     
     if tag_name:
-        download_url = "https://github.com/springfall2008/batpred/archive/refs/tags/{}.zip".format(tag_name)
+        download_url = "https://github.com/Camiel-Nijpels/batpred-zendure-mod/archive/refs/tags/{}.zip".format(tag_name)
         save_path = root + "/predbat_{}.zip".format(tag_name)
         print("Downloading Predbat {}".format(download_url))
 
@@ -58,7 +58,7 @@ if not os.path.exists(root + "/apps.yaml"):
             shutil.rmtree(unzip_path)
         os.makedirs(unzip_path)
         shutil.unpack_archive(save_path, unzip_path)
-        unzip_path = unzip_path + "/batpred-" + tag_name.replace("v", "")
+        unzip_path = unzip_path + "/batpred-zendure-mod-" + tag_name.replace("v", "")
         os.system("cp {}/apps/predbat/* {}".format(unzip_path, root))
         os.system("cp {}/apps/predbat/config/* {}".format(unzip_path, root))
         os.system("rm -rf {}".format(unzip_path))
