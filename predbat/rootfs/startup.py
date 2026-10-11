@@ -14,7 +14,7 @@ if not os.path.exists(root):
 
 # Download the latest Predbat release from GitHub
 if not os.path.exists(root + "/apps.yaml"):
-    url = "https://github.com/Camiel-Nijpels/batpred-zendure-mod/releases"
+    url = "https://api.github.com/repos/Camiel-Nijpels/batpred-zendure-mod/releases"
     print("Download Predbat release list from {}".format(url))
     try:
         r = requests.get(url)
