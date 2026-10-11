@@ -1,7 +1,7 @@
 ---
-name: Predbat
+name: Predbat_zendure_mod
 version: 1.7.1
-slug: predbat
+slug: predbat_zendure_mod
 description: Home Battery Prediction and Control
 url: https://github.com/springfall2008/predbat_addon
 codenotary: tdlj@tdlj.net
@@ -10,7 +10,7 @@ ingress_port: 5052
 ingress_root: "/"
 panel_icon: mdi:bat
 ports:
-  8199/tcp: 8199
+  8198/tcp: 8198
 arch:
   - aarch64
   - amd64
